@@ -1,0 +1,78 @@
+$side-bar-bg-color: #354052;
+$side-bar-text-color: #a0abbf;
+$side-bar-separator: #303a4a;
+$main-bg-color-light: #ecf2f6;
+$main-blue: #15a4fa;
+$main-grey: #6f7d95;
+$main-green: #47bac1;
+$main-purple: #ae69af;
+
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+
+}
+
+.navbar-fixed-top {
+  border: 0;
+}
+
+
+.sidebar {
+  position: fixed;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  display: block;
+  padding: 0px;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  background-color: $side-bar-bg-color;
+  border-right: 1px solid #eee;
+
+  .nav-sidebar {
+    margin-right: -21px;
+    margin-bottom: 20px;
+    margin-left: -20px;
+
+  }
+
+  .nav-sidebar > li > a {
+    padding-right: 20px;
+    padding-left: 20px;
+    color: $side-bar-text-color;
+  }
+  .nav-sidebar > .active > a,
+  .nav-sidebar > .active > a:hover,
+  .nav-sidebar > .active > a:focus {
+    color: #fff;
+  }
+
+  .user-zone {
+    height: 200px;
+    border-bottom: solid 3px #303a4a;
+  }
+}
+
+/* Sidebar navigation */
+
+.main {
+  .page-header {
+    margin-top: 0;
+  }
+}
+
+.appheader {
+  margin-bottom: 30px;
+
+  h4{
+    margin-bottom: 0;
+  }
+
+  img {
+    display: inline-block;
+    border-radius: 50%;
+  }
+}
