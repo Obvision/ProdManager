@@ -32,8 +32,15 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
+
   '/': {
-    view: 'homepage'
+    controller: 'CoreController',
+    action: 'index'
+  },
+
+  '/login': {
+    controller: 'CoreController',
+    action: 'login'
   }
 
   /***************************************************************************
