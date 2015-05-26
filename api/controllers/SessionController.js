@@ -11,8 +11,8 @@ module.exports = {
     if (!req.param('email') || !req.param('password')) {
       var usernamePasswordRequiredError = [{
         name: 'usernamePasswordRequired',
-        type: 'Oh snap!',
-        message: 'You must enter both a username and password.'
+        type: 'Oops !',
+        message: 'Vous devez saisir votre identifiant et mot de passe.'
       }];
 
       req.session.flash = {
@@ -28,8 +28,8 @@ module.exports = {
       if (!user) {
         var noAccountError = [{
           name: 'noAccount',
-          type: 'Oh snap!',
-          message: 'The email address ' + req.param('email') + ' not found.'
+          type: 'Oops !',
+          message: "L'adresse e-mail " + req.param('email') + " n'existe pas."
         }];
         req.session.flash = {
           err: noAccountError
@@ -44,8 +44,8 @@ module.exports = {
         if (!valid) {
           var usernamePasswordMismatchError = [{
             name: 'usernamePasswordMismatch',
-            type: 'oh snap!',
-            message: 'Invalid username and password combination.'
+            type: 'Oops !',
+            message: 'Le mot de passe que vous avez saisi est incorrect.'
           }];
           req.session.flash = {
             err: usernamePasswordMismatchError
