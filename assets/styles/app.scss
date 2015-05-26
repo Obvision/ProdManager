@@ -85,10 +85,9 @@ html, body {
   padding-top: 20px;
 }
 .form-wrap {
-  width: 500px;
-  height: auto;
-  max-width: 500px;
-  margin: 150px auto;
+  position: relative;
+  display: inline-block;
+  margin: 10px auto 0 auto;
   #loginForm {
     padding: 0px 25px 25px;
     background: #fff;
@@ -126,8 +125,9 @@ html, body {
 }
 .alert.alert-danger{
   width: 320px;
-  position: absolute;
-  top: 10%;
-  left: 36%;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
