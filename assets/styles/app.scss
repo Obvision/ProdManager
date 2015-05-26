@@ -1,3 +1,5 @@
+/* Global vars */
+
 $side-bar-bg-color: #354052;
 $side-bar-text-color: #a0abbf;
 $side-bar-separator: #303a4a;
@@ -7,6 +9,22 @@ $main-grey: #6f7d95;
 $main-green: #47bac1;
 $main-purple: #ae69af;
 
+/* Mixins  */
+
+
+/* Styles  */
+
+
+html, body {
+  height: 100%;
+  text-align: center;
+  background-image: url('../images/backlogin.jpg');
+  font-family: "Helvetica Neue", Helvetica, Arial;
+}
+
+.app-main-container{
+  background: #fff;
+}
 
 .sub-header {
   padding-bottom: 10px;
@@ -77,13 +95,6 @@ $main-purple: #ae69af;
   }
 }
 
-html, body {
-  height: 100%;
-  text-align: center;
-  background-image: url('../images/backlogin.jpg');
-  font-family: "Helvetica Neue", Helvetica, Arial;
-  padding-top: 20px;
-}
 .form-wrap {
   width: 500px;
   height: auto;
