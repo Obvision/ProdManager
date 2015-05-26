@@ -13,5 +13,14 @@ module.exports.bootstrap = function(cb) {
 
   // It's very important to trigger this callback method when you are finished
   // with the bootstrap!  (otherwise your server will never lift, since it's waiting on the bootstrap)
+  User.findOrCreate({
+    email: 'admin@admin.com'
+  }, {
+    firstName: 'Super',
+    lastName: 'Admin',
+    email: 'admin@admin.com',
+    password: '12345',
+    confirmation: '12345'
+  }).exec(function createFindCB(err, record) {});
   cb();
 };

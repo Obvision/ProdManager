@@ -34,14 +34,25 @@ module.exports.routes = {
 
 
   '/': {
-    controller: 'CoreController',
+    controller: 'AppController',
     action: 'index'
   },
 
+  '/app': {
+    controller: 'AppController',
+    action: 'app'
+  },
+
   '/login': {
-    controller: 'CoreController',
+    controller: 'AppController',
     action: 'login'
+  },
+
+  '/logout': {
+    controller: 'SessionController',
+    action: 'destroy'
   }
+
 
   /***************************************************************************
   *                                                                          *

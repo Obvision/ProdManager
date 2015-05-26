@@ -31,7 +31,7 @@ module.exports = {
     if (req.session.authenticated) {
       return res.redirect('/app')
     } else {
-      return res.view('session/login');
+      return res.view();
     }
   }
 
