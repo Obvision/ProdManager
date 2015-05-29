@@ -11,9 +11,7 @@ $main-purple: #ae69af;
 
 /* Mixins  */
 
-
 /* Styles  */
-
 
 html, body {
   height: 100%;
@@ -22,7 +20,7 @@ html, body {
   font-family: "Helvetica Neue", Helvetica, Arial;
 }
 
-.app-main-container{
+.app-main-container {
   background: #fff;
 }
 
@@ -36,7 +34,6 @@ html, body {
   border: 0;
 }
 
-
 .sidebar {
   position: fixed;
   top: 0px;
@@ -49,11 +46,10 @@ html, body {
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
   background-color: $side-bar-bg-color;
   border-right: 1px solid #eee;
+  text-align: left;
 
   .nav-sidebar {
-    margin-right: -21px;
     margin-bottom: 20px;
-    margin-left: -20px;
 
   }
 
@@ -69,8 +65,53 @@ html, body {
   }
 
   .user-zone {
-    height: 200px;
+    height: 150px;
+    overflow: visible;
     border-bottom: solid 3px #303a4a;
+
+    img {
+      width: 40%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      border-radius: 100px;
+      border: solid 2px #fff;
+    }
+
+    a.username {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      margin-top: 15px;
+      color: #a2aab8;
+      font-weight: bold;
+
+      &:hover, &:focus {
+        text-decoration: none;
+      }
+    }
+
+    .dropdown-menu {
+      left: 15px;
+      border-radius: 0;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #dee5e7;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 2px;
+      -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+      a {
+        color: #5E5E5E;
+
+        &:hover, &:focus{
+          background: transparent;
+        }
+      }
+    }
   }
 }
 
@@ -85,7 +126,7 @@ html, body {
 .appheader {
   margin-bottom: 30px;
 
-  h4{
+  h4 {
     margin-bottom: 0;
   }
 
@@ -102,9 +143,8 @@ html, body {
   #loginForm {
     padding: 0px 25px 25px;
     background: #fff;
-    box-shadow:
-    0px 0px 0px 5px rgba( 255,255,255,0.4 ),
-    0px 4px 20px rgba( 0,0,0,0.33 );
+    box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.4),
+    0px 4px 20px rgba(0, 0, 0, 0.33);
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
@@ -134,11 +174,14 @@ html, body {
 
   }
 }
-.alert.alert-danger{
+
+.alert.alert-danger {
   width: 320px;
   position: relative;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
+
 

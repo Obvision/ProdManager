@@ -21,6 +21,20 @@ module.exports.bootstrap = function(cb) {
     email: 'admin@admin.com',
     password: '12345',
     confirmation: '12345'
-  }).exec(function createFindCB(err, record) {});
-  cb();
+  }).exec(function createFindCB(err, record) {
+  });
+
+  User.update({}, {
+      online: false
+    },
+    function userUpdated(err, users) {
+      if (err) {
+        console.log(err);
+      } else {
+
+      }
+      cb();
+    }
+  );
+
 };

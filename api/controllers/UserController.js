@@ -18,7 +18,7 @@ module.exports = {
     });
   },
 
-  loggedUser: function (req, res, next) {
+  getloggedUser: function (req, res, next) {
     User.findOne({
       'id': req.session.user.id
     }).populateAll().exec(function (err, result) {
